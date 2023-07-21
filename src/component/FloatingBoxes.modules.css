@@ -1,0 +1,24 @@
+.box {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #0f0;
+    box-shadow: 0 0 10px #0f0;
+    animation: float 5s infinite ease-in-out;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(50px, 50px);
+    }
+  }
+  
+  .floatingBoxesContainer {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+  }
+  
