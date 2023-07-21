@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import { FaArrowRight } from 'react-icons/fa';
 import SignUpForm from '@/component/SignUpForm';
-import episodes from '../data/episodes'; 
+import {episodes} from '../data/episodes'; 
 
 
 export default function Home() {
@@ -46,32 +46,31 @@ export default function Home() {
         </header>
 
         <main className="flex flex-wrap">
-        {episodes && episodes.map((episode) => ( 
-            <div
-              key={episode.id}
-              className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4"
-            >
-              <div className="bg-white shadow-md rounded-md p-4 h-full flex flex-col">
-                <img
-                  src={episode.image}
-                  alt={episode.title}
-                  className="rounded mb-4"
-                />
-                {episode.openForCollab && (
-                  <button className="btn btn-secondary absolute m-2 bg-vibrant-orange text-dark-blue">
-                    Open
-                  </button>
-                )}
-                <h2 className="text-lg font-semibold mb-2 text-black">Episode {episode.id-1}: {episode.title}</h2>
-                <p className='text-black'>{episode.description}</p>
+  {episodes.length > 0 ? (
+    episodes.map((episode) => (
+      <div key={episode.id} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+        <div className="bg-white shadow-md rounded-md p-4 h-full flex flex-col">
+          <img src={episode.image} alt={episode.title} className="rounded mb-4" />
+          {episode.openForCollab && (
+            <button className="btn btn-secondary absolute m-2 bg-vibrant-orange text-dark-blue">
+              Open
+            </button>
+          )}
+          <h2 className="text-lg font-semibold mb-2 text-black">Episode {episode.id-1}: {episode.title}</h2>
+          <p className='text-black'>{episode.description}</p>
+          <Link href={`/episodes/${episode.id}`}>
+            <button className=" mt-auto p-2 bg-indigo-700 text-white rounded flex items-center">
+              <FaArrowRight className="ml-2" />
+            </button>
+          </Link>
+        </div>
+      </div>
+    ))
+  ) : (
+    <p>Loading...</p>
+  )}
+</main>
 
-                <Link href={`/episodes/${episode.id}`}>
-                <button className=" mt-auto p-2 bg-indigo-700 text-white rounded flex items-center"><FaArrowRight className="ml-2" /></button>
-        </Link>
-              </div>
-            </div>
-          ))}
-        </main>
         <footer>
           <SignUpForm />
         </footer>
