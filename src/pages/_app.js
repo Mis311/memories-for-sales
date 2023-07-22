@@ -55,7 +55,7 @@ export default function MyApp({ Component, pageProps }) {
   if (!hydrated) {
     return <h1>Loading</h1>
   } else if (isLandingPage) {
-    return <Component {...pageProps} />
+    return <WagmiConfig config={wagmiConfig}> <Component {...pageProps} /></WagmiConfig>
   } else {
     return (
       <>

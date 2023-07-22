@@ -30,7 +30,7 @@ export default function Home() {
           <li><Link href="/earn">Contribute & Earn</Link></li>
           <li><Link href="/marketplace">Marketplace Mémoires</Link></li>
           <li><Link href="/digital-mind">Digital Mind (Beta)</Link></li>
-    
+      <li><WalletConnect /></li>
         </ul>
       </div>
 
