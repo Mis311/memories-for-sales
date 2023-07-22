@@ -4,14 +4,7 @@ const Earn = () => {
   const [file, setFile] = useState(null);
   const [modelImage, setModelImage] = useState('/howto.png');
 
-  const handleFileChange = (event) => {
-    setFile(event.target.files[0]);
-  };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // handle form submission
-  };
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -71,15 +64,7 @@ const Earn = () => {
         </div>
       </div>
 
-      {/* Attach file and submit form */}
-      <form className="m-2" onSubmit={handleSubmit}>
-        <label>
-          Attach a file:
-          <input type="file" onChange={handleFileChange} />
-        </label>
-
-        <button type="submit" className="btn btn-primary mt-2">Submit</button>
-      </form>
+     
     </div>
   );
 };
