@@ -1,5 +1,5 @@
 import Link from 'next/link'
-
+import WalletConnect from './WalletConnect'
 export default function Layout({ children }) {
   return (
     <div className="min-h-screen p-12 bg-indigo-900 text-white bg-gradient-to-b from-purple-950 via-indigo-800 gradient-radial radient-gradient">
@@ -10,6 +10,7 @@ export default function Layout({ children }) {
         <li><Link href="/earn">Contribute & Earn</Link></li>
         <li><Link href="/marketplace">Marketplace Mémoires</Link></li>
         <li><Link href="/digital-mind">Digital Mind (Beta)</Link></li>
+        <li><WalletConnect /></li>
       </ul>
     </nav>
       <main>
