@@ -8,9 +8,9 @@ export const episodes = [
       'Characters and Story Introduction',
     openForCollab: false,
     text:`In 2077, people were able to receive Memories-Based Treatment, where they remove part of traumatic experiences with parastic procedure. Kaiya is in his 20s living in a slum of neo future Tokyo, and he was making his life by selling his memories in blackmarket. Kaiya has his friend, Kazami, a female mechanic who treats him whenever he gets in trouble, as he sells explicitly dangerous experiences.`,
-    images: ['kaiya_profile.png', 'kazami1.png'],
+    images: [ '/kazami1.png'],
 
-  manga: ['manga1.png', 'manga2.png'],
+
   },
   {
     id: 2,
@@ -27,9 +27,9 @@ export const episodes = [
     
     Defying local regulations, Kaiya uses his hoverboard to rise above the pandemonium. As the fire spreads, he races against time to douse the flames. Amidst the danger, he discovers an abandoned baby and a robot. Faced with a moral dilemma, Kaiya chooses to rescue the infant, while the robot helps quench the fire.`,
 
-    images: ['kaiya_profile.png', 'kazami1.png'],
 
-  manga: ['manga1.png', 'manga2.png'],
+
+  manga: ['/manga1.png', '/manga2.png'],
   },
   {
     id: 3,
@@ -43,25 +43,28 @@ export const episodes = [
     Just as he decides to leave and gets ready to ride his hoverboard, another young man approaches him. The newcomer addresses Kaiya as the subject of recent city rumors. It appears that word of Kaiya's heroic act of saving a baby from a fire has spread, and this young man claims to be an eyewitness of the incident. Before parting, the young man insists on giving Kaiya his contact information, which adds another layer of intrigue to Kaiya's already complicated life in the city.
     
     `,
-    images: ['kaiya_profile.png', 'kazami1.png'],
+    images: [],
 
-  manga: ['manga1.png', 'manga2.png'],
+
   },
   {
     id: 4,
     image: '/hover.png',
     title: 'Uprising Hero',
-    description:
-      'A seemingly fan finds Kaiya, asks him if he is a hero of the city rumors.',
+    description:'`On a way from clinic, Kaiya encounters a fire from a block.'
+ ,
     openForCollab: false,
-    text:'',
-    images: ['kaiya_profile.png', 'kazami1.png'],
+    text: `In the fourth episode, Kaiya finds himself in a nightclub, where he meets a woman strikingly similar to Kazami. As he attempts to seduce her, they engage in random conversations, prompting Kaiya to recall his efforts to save money for Kazami.
 
-  manga: ['manga1.png', 'manga2.png'],
+    Uncomfortable with the situation, Kaiya grumbles, "Give me a break, this will make me sick." But the woman presses on, claiming that it's a waste not to respond when one is wanted so badly. He shrugs and allows her to lean on him, her weighty chest pressing against his flat one. Her body, cool and eerily android-like due to its lower body temperature, brings an unsettling feeling. The perfectly blended scent of her perfume fills his nostrils, causing him to grimace involuntarily.
+     `,
+    images: [],
+
+
   },
   {
     id: 5,
-    image: './night.png',
+    image: '/night.png',
     title: 'Queen Bee Honey',
     description:
       'In a nightclub, Kaiya gets into an imminent trap.',
@@ -73,9 +76,8 @@ export const episodes = [
     Just then, the sounds of a bike crash interrupt the moment. The man who Kaiya met the other day appears, screaming that this was a trap. Together, they make a quick escape from the club. In the process, Kaiya makes a promise to become a hero, but only for the right price.
     
     `,
-    images: ['kaiya_profile.png', 'kazami1.png'],
+  
 
-  manga: ['manga1.png', 'manga2.png'],
   },
   {
     id: 6,
@@ -86,9 +88,7 @@ export const episodes = [
     openForCollab: false,
     text:`Kaiya and his new companion equip themselves with custom guns and electrified gloves, kickstarting their journey as the city's superheroes. They intervene in various crimes, stopping thefts and sexual offenses, making a palpable impact on the city's safety. Their actions do not go unnoticed, and soon they become a phenomenon, capturing the city's attention. The pair's dynamic and effective intervention against crime bring about a change in the city, challenging its citizens to reevaluate their perceptions of vigilante justice.
     `,
-    images: ['kaiya_profile.png', 'kazami1.png'],
-
-  manga: ['manga1.png', 'manga2.png'],
+  
   },
   {
     id: 7,
@@ -100,26 +100,22 @@ export const episodes = [
     text:`6th episode, everything was going well but kazami got attacked by one of the yakuza members, which kaiya helped and let her leave for different place. kaiya blames his new friend for making him famous, and they break up. then he met a guy from demo, and he invites kaiya to join the looting. kaiya doesnt join but he goes to hide out and know what they are plotting---attacking and taking hostage of people's memories. conspiracy theory that governers control people by inplanting fake memories and hiding dirtiest secret of governers 
 
     `,
-    images: ['kaiya_profile.png', 'kazami1.png'],
 
-  manga: ['manga1.png', 'manga2.png'],
   },
   {
     id: 8,
-    image: './clinic.png',
+    image: '/clinic.png',
     title: "Stolen Memories",
     description:
       'Kaiya goes undercover at a memory clinic, unravelling a plot to reclaim lost childhood memories.',
     openForCollab: true,
     text:'7th episode he goes undercover to find out if the conspiracy theory is true to thelocal memory clinic and finds out the part of memory about childhood is missing. the data seems to be sent to the headquarter storage center. in order to take mothers memories back, he decides to go along with the secret organization. contacting his hero friends, he sneaks into the center. ',
-    images: ['kaiya_profile.png', 'kazami1.png'],
 
-  manga: ['manga1.png', 'manga2.png'],
   },
   {
     id: 9,
     image: '/battle.png',
-    title: 'Batt;e',
+    title: 'Battle',
     description:
       "Amid a tense standoff, Kaiya wrestles with moral dilemmas over conflicting memory narratives.",
     openForCollab: true,
@@ -130,10 +126,7 @@ export const episodes = [
 
 
 
-    `,
-    images: ['kaiya_profile.png', 'kazami1.png'],
-
-  manga: ['manga1.png', 'manga2.png'],
+`
   },
   {
     id: 10,
@@ -143,8 +136,6 @@ export const episodes = [
       'Confronted with a bleak reality, Kaiya unveils his criminal past and ponders alternate life paths.',
     openForCollab: false,
     text:`he takes back his memories and get back to reality which has been all simulating the things happened. he was a famous criminal with traumatic past with his mother. his friend was true hero who caught him. he asked for memories therapy/testimony. he realized everything was a fake and he takes friends gun and put it on his own head. in the end his brain goes through his could-happen ordinary life, with loved one before he dies.`,
-    images: ['kaiya_profile.png', 'kazami1.png'],
 
-  manga: ['manga1.png', 'manga2.png'],
   },
 ]

@@ -1,12 +1,36 @@
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import Link from 'next/link'
 import { FaArrowRight } from 'react-icons/fa';
 import SignUpForm from '@/component/SignUpForm';
 import {episodes} from '../data/episodes'; 
 import WalletConnect from '@/component/WalletConnect';
+import YouTube from 'react-youtube';
 
 export default function Home() {
+  const videoRef = useRef(null);
+
+  const handlePlay = () => {
+    // Request fullscreen
+    if (videoRef.current.requestFullscreen) {
+      videoRef.current.requestFullscreen();
+    } else if (videoRef.current.mozRequestFullScreen) { /* Firefox */
+      videoRef.current.mozRequestFullScreen();
+    } else if (videoRef.current.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+      videoRef.current.webkitRequestFullscreen();
+    } else if (videoRef.current.msRequestFullscreen) { /* IE/Edge */
+      videoRef.current.msRequestFullscreen();
+    }
+  
+    // Start playing
+    videoRef.current.play();
+  };
+  
+
+  const handleVideoClick = () => {
+
+    window.location.href = 'https://forms.gle/pEQWCfsYu5wpEbdJ8';
+  };
 
   return (
     <>
@@ -38,11 +62,24 @@ export default function Home() {
 
       <div className="w-3/4 text-dark-blue mt-12">
         <header className="w-full bg-black p-6 mb-8 rounded-tr-md flex flex-row">
-          <Image src='/memories.png' width={600} height={400}/>
+        <YouTube
+  videoId="VBrD-XgKExs" 
+  opts={{
+    height: '400',
+    width: '600',
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+      autoplay: 0,
+    },
+  }}
+  onEnd={handleVideoClick} // change this if you want something to happen at the end of the video
+/>
           <div className='flex flex-col p-12'>
           <h1 className="text-3xl font-bold drop-shadow-xl">Memories for Sales</h1>
-          <p className="mt-2">Short manga description...</p>
-          <button className="btn btn-primary mt-4 text-white">Play Memory</button>
+          <p className="mt-2">
+            In the futuristic city of Neo Tokyo, inpoverished youth Kaiya sells his memories illegally. When Kaiya finds his path to become a city hero, his missing memoriesg awaken the ghost from the past.
+          </p>
+          <button className="btn btn-primary mt-4 text-white">Apply to Read or Contribute</button>
           </ div>
         </header>
 
