@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { FaArrowRight } from 'react-icons/fa';
 import SignUpForm from '@/component/SignUpForm';
 import {episodes} from '../data/episodes'; 
-
+import WalletConnect from '@/component/WalletConnect';
 
 export default function Home() {
 
@@ -30,6 +30,7 @@ export default function Home() {
           <li><Link href="/earn">Contribute & Earn</Link></li>
           <li><Link href="/marketplace">Marketplace Mémoires</Link></li>
           <li><Link href="/digital-mind">Digital Mind (Beta)</Link></li>
+    
         </ul>
       </div>
 
