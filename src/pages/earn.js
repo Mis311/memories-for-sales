@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 const Earn = () => {
-  const [file, setFile] = useState(null);
+ 
   const [modelImage, setModelImage] = useState('/howto.png');
 
 
