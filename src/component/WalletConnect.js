@@ -10,7 +10,7 @@ function WalletConnect(props) {
   return (
     <>
       {address ? (
-        <button
+        <button 
           onClick={() => open()}
           style={{
             backgroundColor: '#3595fe',
