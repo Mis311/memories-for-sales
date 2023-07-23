@@ -6,7 +6,7 @@ export const episodes = [
     title: 'Prologue',
     description:
       'Characters and Story Introduction',
-    openForCollab: false,
+    openForCollab: true,
     text:`In 2077, people were able to receive Memories-Based Treatment, where they remove part of traumatic experiences with parastic procedure. Kaiya is in his 20s living in a slum of neo future Tokyo, and he was making his life by selling his memories in blackmarket. Kaiya has his friend, Kazami, a female mechanic who treats him whenever he gets in trouble, as he sells explicitly dangerous experiences.`,
     images: [ '/kazami1.png'],
 
@@ -95,7 +95,7 @@ export const episodes = [
     image: '/kazami.png',
     title: 'Synthetic Sentience',
     description:
-      'Confronting fame&apos;s fallout, Kaiya delves into a conspiracy about stolen memories.',
+      `Confronting fame's fallout, Kaiya delves into a conspiracy about stolen memories.`,
     openForCollab: true,
     text:`6th episode, everything was going well but kazami got attacked by one of the yakuza members, which kaiya helped and let her leave for different place. kaiya blames his new friend for making him famous, and they break up. then he met a guy from demo, and he invites kaiya to join the looting. kaiya doesnt join but he goes to hide out and know what they are plotting---attacking and taking hostage of people's memories. conspiracy theory that governers control people by inplanting fake memories and hiding dirtiest secret of governers 
 

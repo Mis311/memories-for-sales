@@ -65,7 +65,7 @@ export default function EpisodePage() {
      
       setCollaborations([
         { id: 1, title: 'Request for music tribution', description: 'Feel free to submit OST of episode' },
-        { id: 2, title: 'Request for manga ', description: 'scene 35 cgaracter face' },
+        { id: 2, title: 'Request for manga ', description: 'Frame 2 character face' },
         // ...more collaborations
       ]);
     }

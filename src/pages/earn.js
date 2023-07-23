@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-
+import Link from 'next/link';
 const Earn = () => {
  
   const [modelImage, setModelImage] = useState('/howto.png');
@@ -60,6 +60,7 @@ const Earn = () => {
           </figure>
             <h2 className="card-title">Practice</h2>
             <p>Try to upload the picture of a scene and wait for the DAO to validate your work!</p>
+            <Link href='/episodes/2'><button className='bg-purple-600 rounded p-2 mt-4 text-2xl'>Try Making Contribution!</button></Link>
           </div>
         </div>
       </div>
